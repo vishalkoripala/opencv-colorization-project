@@ -16,11 +16,8 @@ Every restoration stage — denoising, contrast enhancement, sharpening — and 
 
 ## Demo
 
-🔗 **Live Demo:** *Not yet deployed — add your Streamlit Community Cloud URL here after deploying (see [Deployment](#deployment)).*
+🔗 "https://mirror.opencv.ai/colorization_release_v2.caffemodel"
 
-## Screenshots
-
-*Pending — add after running the app locally or deploying it. Suggested shots: the upload card with metadata, the sidebar processing controls, the before/after comparison slider mid-drag, and the metrics row.*
 
 ## Features
 
