@@ -23,7 +23,7 @@ POINTS_PATH = MODEL_DIR / "pts_in_hull.npy"
 # long-standing canonical link every reference uses; MIN_MODEL_SIZE_BYTES
 # below is a basic integrity guard against a truncated or corrupted
 # download, not a substitute for a real checksum.
-MODEL_URL = "https://people.eecs.berkeley.edu/~rich.zhang/projects/2016_colorization/files/demo_v2/colorization_release_v2.caffemodel"
+MODEL_URL = "https://mirror.opencv.ai/colorization_release_v2.caffemodel"
 MIN_MODEL_SIZE_BYTES = 100_000_000  # real file is ~123MB
 
 # --- colorization network ----------------------------------------------
