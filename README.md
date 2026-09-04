@@ -16,7 +16,7 @@ Every restoration stage — denoising, contrast enhancement, sharpening — and 
 
 ## Demo
 
-🔗 "https://mirror.opencv.ai/colorization_release_v2.caffemodel"
+🔗 "https://opencv-colorization-project-hdzxkwgs9xmdjxrv3jyguw.streamlit.app/"
 
 
 ## Features
