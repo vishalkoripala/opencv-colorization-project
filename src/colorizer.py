@@ -19,15 +19,15 @@ from .config import (
     PROTOTXT_PATH,
     SATURATION_GAMMA,
 )
-
+from .model_downloader import ensure_model_downloaded
 
 def load_model():
-    """Load the Caffe colorization network and wire in the cluster centers.
+    """Load the Caffe colorization network and wire in the cluster centers."""
 
-    Raises FileNotFoundError with a clear, actionable message if any of the
-    required model assets are missing, instead of letting a raw OpenCV/C++
-    error crash the app.
-    """
+    # Download the large pretrained weights if they are missing.
+    if not MODEL_PATH.is_file():
+        ensure_model_downloaded()
+
     missing = [p for p in (PROTOTXT_PATH, MODEL_PATH, POINTS_PATH) if not p.is_file()]
     if missing:
         raise FileNotFoundError(
